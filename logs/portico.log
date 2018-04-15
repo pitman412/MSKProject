@@ -1,0 +1,169 @@
+ERROR [main] portico.lrc: Error reading FED file [java.io.BufferedInputStream@175dda1]: Encountered "(spaces" at line 3, column 5.
+Was expecting:
+    <FEDVERSION> ...
+    
+org.portico.lrc.compat.JErrorReadingFED: Error reading FED file [java.io.BufferedInputStream@175dda1]: Encountered "(spaces" at line 3, column 5.
+Was expecting:
+    <FEDVERSION> ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:72)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:39)
+	at org.portico.utils.fom.FomParser.parseFom(FomParser.java:98)
+	at org.portico.utils.fom.FomParser.parse(FomParser.java:159)
+	at org.portico.lrc.services.federation.handlers.outgoing.CreateFederationHandler.process(CreateFederationHandler.java:65)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.impl.hla13.Impl13Helper.processMessage(Impl13Helper.java:123)
+	at org.portico.impl.hla13.Rti13Ambassador.processMessage(Rti13Ambassador.java:5822)
+	at org.portico.impl.hla13.Rti13Ambassador.createFederationExecution(Rti13Ambassador.java:194)
+	at hla13.Example13Federate.runFederate(Example13Federate.java:184)
+	at hla13.Example13Federate.main(Example13Federate.java:563)
+Caused by: org.portico.impl.hla13.fomparser.ParseException: Encountered "(spaces" at line 3, column 5.
+Was expecting:
+    <FEDVERSION> ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.generateParseException(FOM.java:733)
+	at org.portico.impl.hla13.fomparser.FOM.jj_consume_token(FOM.java:654)
+	at org.portico.impl.hla13.fomparser.FOM.fedVersion(FOM.java:151)
+	at org.portico.impl.hla13.fomparser.FOM.parse(FOM.java:100)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:61)
+	... 10 more
+ERROR [main] portico.lrc: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered "int" at line 8, column 27.
+Was expecting one of:
+    "reliable" ...
+    "best_effort" ...
+    
+org.portico.lrc.compat.JErrorReadingFED: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered "int" at line 8, column 27.
+Was expecting one of:
+    "reliable" ...
+    "best_effort" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:72)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:39)
+	at org.portico.utils.fom.FomParser.parseFom(FomParser.java:98)
+	at org.portico.utils.fom.FomParser.parse(FomParser.java:159)
+	at org.portico.lrc.services.federation.handlers.outgoing.CreateFederationHandler.process(CreateFederationHandler.java:65)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.impl.hla13.Impl13Helper.processMessage(Impl13Helper.java:123)
+	at org.portico.impl.hla13.Rti13Ambassador.processMessage(Rti13Ambassador.java:5822)
+	at org.portico.impl.hla13.Rti13Ambassador.createFederationExecution(Rti13Ambassador.java:194)
+	at hla13.Example13Federate.runFederate(Example13Federate.java:184)
+	at hla13.Example13Federate.main(Example13Federate.java:563)
+Caused by: org.portico.impl.hla13.fomparser.ParseException: Encountered "int" at line 8, column 27.
+Was expecting one of:
+    "reliable" ...
+    "best_effort" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.generateParseException(FOM.java:733)
+	at org.portico.impl.hla13.fomparser.FOM.jj_consume_token(FOM.java:654)
+	at org.portico.impl.hla13.fomparser.FOM.transport(FOM.java:489)
+	at org.portico.impl.hla13.fomparser.FOM.objectAttribute(FOM.java:305)
+	at org.portico.impl.hla13.fomparser.FOM.objectClass(FOM.java:257)
+	at org.portico.impl.hla13.fomparser.FOM.objects(FOM.java:232)
+	at org.portico.impl.hla13.fomparser.FOM.parse(FOM.java:120)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:61)
+	... 10 more
+ERROR [main] portico.lrc: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered "int" at line 8, column 36.
+Was expecting one of:
+    "timestamp" ...
+    "receive" ...
+    
+org.portico.lrc.compat.JErrorReadingFED: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered "int" at line 8, column 36.
+Was expecting one of:
+    "timestamp" ...
+    "receive" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:72)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:39)
+	at org.portico.utils.fom.FomParser.parseFom(FomParser.java:98)
+	at org.portico.utils.fom.FomParser.parse(FomParser.java:159)
+	at org.portico.lrc.services.federation.handlers.outgoing.CreateFederationHandler.process(CreateFederationHandler.java:65)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.impl.hla13.Impl13Helper.processMessage(Impl13Helper.java:123)
+	at org.portico.impl.hla13.Rti13Ambassador.processMessage(Rti13Ambassador.java:5822)
+	at org.portico.impl.hla13.Rti13Ambassador.createFederationExecution(Rti13Ambassador.java:194)
+	at hla13.Example13Federate.runFederate(Example13Federate.java:184)
+	at hla13.Example13Federate.main(Example13Federate.java:563)
+Caused by: org.portico.impl.hla13.fomparser.ParseException: Encountered "int" at line 8, column 36.
+Was expecting one of:
+    "timestamp" ...
+    "receive" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.generateParseException(FOM.java:733)
+	at org.portico.impl.hla13.fomparser.FOM.jj_consume_token(FOM.java:654)
+	at org.portico.impl.hla13.fomparser.FOM.order(FOM.java:515)
+	at org.portico.impl.hla13.fomparser.FOM.objectAttribute(FOM.java:306)
+	at org.portico.impl.hla13.fomparser.FOM.objectClass(FOM.java:257)
+	at org.portico.impl.hla13.fomparser.FOM.objects(FOM.java:232)
+	at org.portico.impl.hla13.fomparser.FOM.parse(FOM.java:120)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:61)
+	... 10 more
+ERROR [main] portico.lrc: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered "int" at line 8, column 27.
+Was expecting one of:
+    "reliable" ...
+    "best_effort" ...
+    
+org.portico.lrc.compat.JErrorReadingFED: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered "int" at line 8, column 27.
+Was expecting one of:
+    "reliable" ...
+    "best_effort" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:72)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:39)
+	at org.portico.utils.fom.FomParser.parseFom(FomParser.java:98)
+	at org.portico.utils.fom.FomParser.parse(FomParser.java:159)
+	at org.portico.lrc.services.federation.handlers.outgoing.CreateFederationHandler.process(CreateFederationHandler.java:65)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.impl.hla13.Impl13Helper.processMessage(Impl13Helper.java:123)
+	at org.portico.impl.hla13.Rti13Ambassador.processMessage(Rti13Ambassador.java:5822)
+	at org.portico.impl.hla13.Rti13Ambassador.createFederationExecution(Rti13Ambassador.java:194)
+	at hla13.Example13Federate.runFederate(Example13Federate.java:184)
+	at hla13.Example13Federate.main(Example13Federate.java:563)
+Caused by: org.portico.impl.hla13.fomparser.ParseException: Encountered "int" at line 8, column 27.
+Was expecting one of:
+    "reliable" ...
+    "best_effort" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.generateParseException(FOM.java:733)
+	at org.portico.impl.hla13.fomparser.FOM.jj_consume_token(FOM.java:654)
+	at org.portico.impl.hla13.fomparser.FOM.transport(FOM.java:489)
+	at org.portico.impl.hla13.fomparser.FOM.objectAttribute(FOM.java:305)
+	at org.portico.impl.hla13.fomparser.FOM.objectClass(FOM.java:257)
+	at org.portico.impl.hla13.fomparser.FOM.objects(FOM.java:232)
+	at org.portico.impl.hla13.fomparser.FOM.parse(FOM.java:120)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:61)
+	... 10 more
+ERROR [main] portico.lrc: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered ")" at line 8, column 38.
+Was expecting one of:
+    "timestamp" ...
+    "receive" ...
+    
+org.portico.lrc.compat.JErrorReadingFED: Error reading FED file [java.io.BufferedInputStream@fb5b59]: Encountered ")" at line 8, column 38.
+Was expecting one of:
+    "timestamp" ...
+    "receive" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:72)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:39)
+	at org.portico.utils.fom.FomParser.parseFom(FomParser.java:98)
+	at org.portico.utils.fom.FomParser.parse(FomParser.java:159)
+	at org.portico.lrc.services.federation.handlers.outgoing.CreateFederationHandler.process(CreateFederationHandler.java:65)
+	at org.portico.utils.messaging.MessageSink.process(MessageSink.java:187)
+	at org.portico.impl.hla13.Impl13Helper.processMessage(Impl13Helper.java:123)
+	at org.portico.impl.hla13.Rti13Ambassador.processMessage(Rti13Ambassador.java:5822)
+	at org.portico.impl.hla13.Rti13Ambassador.createFederationExecution(Rti13Ambassador.java:194)
+	at hla13.Example13Federate.runFederate(Example13Federate.java:184)
+	at hla13.Example13Federate.main(Example13Federate.java:563)
+Caused by: org.portico.impl.hla13.fomparser.ParseException: Encountered ")" at line 8, column 38.
+Was expecting one of:
+    "timestamp" ...
+    "receive" ...
+    
+	at org.portico.impl.hla13.fomparser.FOM.generateParseException(FOM.java:733)
+	at org.portico.impl.hla13.fomparser.FOM.jj_consume_token(FOM.java:654)
+	at org.portico.impl.hla13.fomparser.FOM.order(FOM.java:515)
+	at org.portico.impl.hla13.fomparser.FOM.objectAttribute(FOM.java:306)
+	at org.portico.impl.hla13.fomparser.FOM.objectClass(FOM.java:257)
+	at org.portico.impl.hla13.fomparser.FOM.objects(FOM.java:232)
+	at org.portico.impl.hla13.fomparser.FOM.parse(FOM.java:120)
+	at org.portico.impl.hla13.fomparser.FOM.parseFOM(FOM.java:61)
+	... 10 more

@@ -66,7 +66,7 @@ import org.portico.impl.hla13.types.DoubleTimeInterval;
  *       created the federation, the call to create it again will result in an
  *       exception. The example federate expects this and will not fail.
  * NOTE: Between actions 4. and 5., the federate will pause until the uses presses
- *       the enter key. This will give other federates a chance to enter the
+ *  *       the enter key. This will give other federates a chance to enter the
  *       federation and prevent other federates from racing ahead.
  * 
  * 
@@ -180,7 +180,7 @@ public class Example13Federate
 		//       in that case, we'll just try and join it
 		try
 		{
-			File fom = new File( "testfom.fed" );
+			File fom = new File( "ModelFom.fed" );
 			rtiamb.createFederationExecution( "ExampleFederation",
 			                                  fom.toURI().toURL() );
 			log( "Created Federation" );

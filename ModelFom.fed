@@ -1,0 +1,26 @@
+(FED
+    (Federation Portico-Project)
+    (FEDversion v1.3)
+    (spaces)
+    (objects
+        (class Client
+            (attribute privilegeToDelete reliable timestamp)
+            (attribute id best_effort)
+            (attribute shoppingTime reliable int)
+            (attribute articlesAmount reliable int)
+            (attribute position reliable enum)
+            (attribute enterQueueTime reliable int)
+            (attribute checkoutStartTime reliable int)
+        )
+        (class CashRegister
+            (attribute id reliable int)
+            (attribute queueLength reliable int)
+            ;; TODO wstawić listę klientów (tablica, lista) (attribute clients int)
+            (attribute operatedClient int)
+        )
+    )
+    (interactions
+        (class TakeCustomersToShop reliable timestamp
+            (parameter customersAmount reliable int)
+        )
+)
